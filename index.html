@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+
+  <main>
+
+    <picture>
+      <source media="(min-width: 820px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+      <source media="(min-width: 465px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="main image">
+    </picture>
+
+    <section class="main-section">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+
+      <form id="myForm">
+        <label for="email">Email address </label><br>
+        <input type="email" name="email" placeholder="email@company.com" required><br><br>
+        <input type="submit" value="Subscribe to monthly newsletter">
+      </form>
+
+      <!-- Sign-up form end -->
+
+    </section>
+
+    <!-- Success message start -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <img class="success-icon" src="./assets/images/icon-success.svg" alt="">
+      <h2>Thanks for subscribing!</h2>
+      <p id="successMessage">Your form has been submitted successfully.</p>
+      <span class="close-button">Dismiss message</span>
+    </div>
+  </div>
+
+  <!-- Success message end -->
+
+  </main>
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
